@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwissScape</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a798909a18.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+        .profileImage{
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+        }
+        .accountButton {
+            background-color: var(--secondary);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 10px;
+            color: var(--primary);
+            transition: 0.2s;
+            margin-bottom: 200px;
+        }
+
+        .accountButton:hover {
+            cursor: pointer;
+            background-color: var(--primary);
+            color: var(--secondary);
+        }
+        
+        #navbar{
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav id="navbar">
+            <div id="navbarLeft">
+              <img src="./icons/logo.png" id="logo" />
+            </div>
+            <div id="navbarRight">
+              <div class="navbarButton">
+                <a href="index.html">
+                  <img class="navbarButtonIcon" src="./icons/homeicon.png" />
+                </a>
+              </div>
+    
+              <div class="navbarButton">
+                <a href="map.html">
+                  <img class="navbarButtonIcon" src="./icons/maps.png" />
+                </a>
+              </div>
+    
+              <div class="navbarButton">
+                <a href="account.html">
+                  <img class="navbarButtonIcon" src="./icons/account.png" />
+                </a>
+              </div>
+            </div>
+          </nav>
+        <section class="main">
+            <div class="profile-card">
+                <div class="profileImage">
+                    <img src="images/profile.png" width="80px" height="80px">
+                </div>
+                <div class="name">
+                    <h3>Nare Gevorgyan</h3>
+                </div>
+                <div class="buttons">
+                    <div class="button-container">
+                        <button class="accountButton">Settings</button>
+                        <button class="accountButton">Edit Profile</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <h6 id="footerText">
+              &copy 2024, SwissScape, LLC, All Rights Reserved
+            </h6>
+          </footer>
+    </div>
+</body>
+</html>

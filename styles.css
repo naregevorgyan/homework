@@ -1,0 +1,228 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --primary: #529bc3;
+  --secondary: #e1ecf7;
+  --button-color: #0091f4;
+}
+
+body {
+  background-color: #e1ecf7;
+}
+#container {
+  width: 280px;
+  margin: 0px auto;
+  background: white;
+  padding: 20px;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 60px;
+}
+
+#navbarRight {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.navbarButton {
+  background-color: var(--secondary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.navbarButton:hover {
+  background: #b4bcc5;
+  cursor: pointer;
+}
+
+.navbarButtonIcon {
+  width: 15px;
+  padding-top: 5px;
+}
+
+#active {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: absolute;
+}
+
+#postBig {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#postBigTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#postBigViewMore {
+  color: var(--primary);
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+#postBigImageContainer {
+  position: relative;
+}
+
+#postBigImage {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  filter: brightness(40%);
+}
+
+#postBigDescriptionContainer {
+  padding: 15px;
+  position: absolute;
+  bottom: 10px;
+}
+
+#postBigDescriptionTitle {
+  color: rgb(233, 233, 233);
+  font-weight: bold;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+#postBigDescription {
+  color: rgb(213, 213, 213);
+  font-size: 10px;
+  line-height: 14px;
+  margin: 5px 0;
+  padding-bottom: 5px;
+}
+
+#postBigDescriptionWrapper {
+  width: 60%;
+}
+
+#postBigDescriptionButton {
+  border: none;
+  border-radius: 30px;
+  background-color: var(--button-color);
+  color: white;
+  padding: 7px 12px;
+  font-size: 10px;
+}
+
+#futureEvents {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#futureEventsTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#futureEventsViewMore {
+  color: var(--primary);
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.post {
+  width: 100%;
+  background-color: var(--secondary);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  align-items: center;
+  height: 80px;
+  gap: 10px;
+  position: relative;
+}
+
+.postImageContainer {
+  margin: 0;
+  padding: 0;
+  height: 80px;
+}
+
+.postImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+}
+
+.postTitle {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.postTitleContainer {
+  display: flex;
+  flex: 1;
+}
+
+.postsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.postIcon {
+  position: absolute;
+  right: 20px;
+}
+
+#thingsToDo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#thingsToDoTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#thingsToDoViewMore {
+  color: var(--primary);
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footerText {
+  color: #acacac;
+}
